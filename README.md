@@ -1,97 +1,93 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's default starter
-</h1>
+# [Votos.pt](https://votos.pt/)
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+Portuguese politics made easy.
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+## Getting Started
 
-## 🚀 Quick start
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-1.  **Create a Gatsby site.**
+### Prerequisites
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+- Node
 
-    ```sh
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-    ```
+### Installing
 
-1.  **Start developing.**
+1. Clone
 
-    Navigate into your new site’s directory and start it up.
+```
+git clone https://github.com/antoniojps/votos-client.git
+```
 
-    ```sh
-    cd my-default-starter/
-    gatsby develop
-    ```
+2. Install dependencies
 
-1.  **Open the source code and start editing!**
+```
+cd votos-client
+yarn install
+```
 
-    Your site is now running at `http://localhost:8000`!
+3. Start developing
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+```
+yarn start
+```
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+Your site is now running at `http://localhost:8000`!
 
-## 🧐 What's inside?
+_Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+## Developing new components
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
+### Atomic design
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+The components structure follows Atomic Design:
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+- **Atoms**: elements, buttons, inputs
+- **Molecules**: components, the combination of atoms
+- **Organisms**: sections of a page, the combination of molecules
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+### Storybook
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+[Storybook](https://storybook.js.org/) is used to build components in isolation and document behaviors for potential reuse through storybook stories.
 
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+A molecule or organism that possible recieves data through an asynchronous request should always consider the three stories:
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
+- **Loading**
+- **Error**
+- **Default**
 
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+Other stories are created to demonstrate modifiers (props that modify the component).
 
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+Run storybook:
 
-9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
+```
+yarn storybook
+```
 
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+Make sure to the test variables in the config file /src/setup/config/config.json are setup correctly
 
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+## Deployment
 
-12. **`README.md`**: A text file containing useful reference information about your project.
+To understand how to deploy the website read the Gatsby documentation: [Deploying and Hosting](https://www.gatsbyjs.org/docs/deploying-and-hosting/).
 
-## 🎓 Learning Gatsby
+```
+yarn build
+```
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
+Start the production server
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+```
+yarn serve
+```
 
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+## Built With
 
-## 💫 Deploy
+- [React](https://reactjs.org/) - A JavaScript library for building user interfaces
+- [Gatsby](https://www.gatsbyjs.org/) - React-based, GraphQL powered, static site generator.
+- [styled-components](https://www.styled-components.com/) - CSS in JS for React.
+- [Storybook](https://storybook.js.org/) - Tool for developing UI components in isolation for React, Vue, and Angular.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+## Authors
 
-<!-- AUTO-GENERATED-CONTENT:END -->
+- **António Santos** - [antoniosantos.me](https://antoniosantos.me)
+- **Henrique Silva** - [github](https://github.com/HenriqueSilva2)
+- **Vasco Silva** - [github](https://github.com/vascosilvaa)
