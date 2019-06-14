@@ -49,7 +49,7 @@ The components structure follows Atomic Design:
 
 [Storybook](https://storybook.js.org/) is used to build components in isolation and document behaviors for potential reuse through storybook stories.
 
-A molecule or organism that possible recieves data through an asynchronous request should always consider the three stories:
+A molecule or organism that possibly recieves data through an asynchronous request should always consider the three stories:
 
 - **Loading**
 - **Error**
@@ -63,7 +63,11 @@ Run storybook:
 yarn storybook
 ```
 
-Make sure to the test variables in the config file /src/setup/config/config.json are setup correctly
+Here's an example component folder:
+
+.
++-- Button.js
++-- Button.stories.js
 
 ## Deployment
 
