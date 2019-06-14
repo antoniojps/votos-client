@@ -45,7 +45,7 @@ The components structure follows Atomic Design:
 - **Molecules**: components, the combination of atoms
 - **Organisms**: sections of a page, the combination of molecules
 
-### Storybook
+### Develop in isolation
 
 [Storybook](https://storybook.js.org/) is used to build components in isolation and document behaviors for potential reuse through storybook stories.
 
