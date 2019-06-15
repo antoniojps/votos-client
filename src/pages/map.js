@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Layout, MapPortugal } from 'components/organisms';
+import { Layout, MapPortugal } from 'components/molecules';
 import SEO from 'utils/Seo';
 import styled from 'styled-components';
 

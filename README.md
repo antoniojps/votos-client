@@ -42,7 +42,7 @@ _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This
 The components structure follows Atomic Design:
 
 - **Atoms**: elements, buttons, inputs
-- **Molecules**: components, the combination of atoms
+- **Molecules**: cards, the combination of atoms
 - **Organisms**: sections of a page, the combination of molecules
 
 ### Develop in isolation
