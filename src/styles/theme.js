@@ -7,9 +7,11 @@ const font = {
 
 const color = {
   base: '#000',
+  baseLighter: '#999999',
   baseInverse: '#FFFFFF',
-  primary: '#69923F',
-  border: '#E6E6E6',
+  primary: '#0076FF',
+  primaryLighter: '#A3C5FB',
+  border: '#F1F3F4',
   bg: '#FFF',
   bgInverse: '#181C21',
   danger: '#FB6D77',
@@ -27,6 +29,7 @@ const value = {
 };
 
 const weight = {
+  light: '200',
   base: '400',
   bold: '700',
 };
@@ -39,7 +42,7 @@ const size = {
   ls: rem('18px'),
   s: rem('20px'),
   sm: rem('24px'),
-  m: rem('32px'),
+  m: rem('28px'),
   ml: rem('42px'),
   l: rem('48px'),
   xl: rem('60px'),
@@ -61,6 +64,10 @@ const spacing = {
   xxl: rem('108px'),
 };
 
+const grid = {
+  width: '1040px',
+};
+
 export const theme = {
   font,
   weight,
@@ -68,4 +75,5 @@ export const theme = {
   spacing,
   size,
   value,
+  grid,
 };

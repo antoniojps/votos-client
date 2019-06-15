@@ -9,7 +9,7 @@ const IndexPage = () => (
       title="Votos - Plataforma Online da Democracia Portuguesa"
       hasTitleFormat={false}
     />
-    ola
+    Partidos
   </Layout>
 );
 

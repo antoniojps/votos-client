@@ -20,6 +20,9 @@ const GlobalStyle = createGlobalStyle`
   main {
     height: 100%;
     width: 100%;
+    max-width: 1040px;
+    margin: auto;
+    padding: 0 ${props => props.theme.spacing.s};
   }
 `;
 
@@ -42,6 +45,7 @@ export const GlobalStyleStorybook = createGlobalStyle`
   main {
     height: 100%;
     width: 100%;
+    max-width: 1040px
   }
 `;
 
