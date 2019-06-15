@@ -63,11 +63,23 @@ Run storybook:
 yarn storybook
 ```
 
-Here's an example component folder:
+Here's an example components folders struture:
 
-.
-+-- Button.js
-+-- Button.stories.js
+```
+components
+└───atoms
+│   └───Button
+│       │   Button.js
+│       │   Button.stories.js
+└───molecules
+│   └───Card
+│       │   Card.js
+│       │   Card.stories.js
+└───organisms
+│   └───Nav
+│       │   Nav.js
+│       │   Nav.stories.js
+```
 
 ## Deployment
 
