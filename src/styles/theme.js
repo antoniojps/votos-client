@@ -10,7 +10,7 @@ const color = {
   baseInverse: "#FFFFFF",
   primary: "#69923F",
   border: "#E6E6E6",
-  bg: "#FFF",
+  bg: "#FFFFFF",
   bgInverse: "#181C21",
   danger: "#FB6D77",
   blue: "#3273DC",

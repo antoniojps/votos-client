@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+// import { Link } from 'gatsby';
 import { Text } from 'components/atoms';
 import styled from 'styled-components';
 
