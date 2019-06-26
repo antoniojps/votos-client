@@ -1,21 +1,29 @@
-import React from "react"
-
-import { Layout, Header } from "components/organisms"
+import React, { useState } from "react"
+import { Layout } from "components/organisms"
 import { PageTitle } from "components/molecules"
-import { Container } from "components/atoms"
+import { Search } from "components/atoms"
 import SEO from "utils/Seo"
-import { theme } from "styles/theme"
+import styled from 'styled-components';
 
-const Parties = () => (
-  <Layout>
-    <SEO
-      title="Votos - Partidos políticos"
-      hasTitleFormat={false}
-    />
-    <Header />
-    <Container left padding={theme.spacing.sm}>
+const Parties = () => {
+  const [searchValue, setSearchValue] = useState('');
+  return (
+    <Layout>
+      <SEO
+        title="Votos - Partidos políticos"
+        hasTitleFormat={false}
+      />
       <PageTitle title="Partidos políticos" subtitle="2019" />
-    </Container>
-  </Layout >
-)
+      <SearchWrapper>
+        <Search placeholder='Pesquisar partidos' value={searchValue} onChange={e => setSearchValue(e.target.value)} />
+      </SearchWrapper>
+    </Layout>
+  )
+}
+
+const SearchWrapper = styled.div`
+  margin: ${props => props.theme.spacing.m} 0;
+  width: 100%;
+`;
+
 export default Parties

@@ -7,7 +7,11 @@ const SocialItem = () => {
   return (
     <Wrapper>
       <span />
-      <a href="https://twitter.com/VotosPt" target="_blank" rel="noreferrer">
+      <a
+        href="https://twitter.com/VotosPt"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <Text>Twitter</Text>
         <svg
           width="18"

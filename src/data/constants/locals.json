@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Açores",
+    "territoryKey": "LOCAL-400000",
+    "territoryKeyOld": "210001"
+  },
+  {
+    "name": "Aveiro",
+    "territoryKey": "LOCAL-010000",
+    "territoryKeyOld": "10000"
+  },
+  {
+    "name": "Beja",
+    "territoryKey": "LOCAL-020000",
+    "territoryKeyOld": "20000"
+  },
+  {
+    "name": "Braga",
+    "territoryKey": "LOCAL-030000",
+    "territoryKeyOld": "30000"
+  },
+  {
+    "name": "Bragança",
+    "territoryKey": "LOCAL-040000",
+    "territoryKeyOld": "40000"
+  },
+  {
+    "name": "Castelo Branco",
+    "territoryKey": "LOCAL-050000",
+    "territoryKeyOld": "50000"
+  },
+  {
+    "name": "Coimbra",
+    "territoryKey": "LOCAL-060000",
+    "territoryKeyOld": "60000"
+  },
+  {
+    "name": "Évora",
+    "territoryKey": "LOCAL-070000",
+    "territoryKeyOld": "70000"
+  },
+  {
+    "name": "Faro",
+    "territoryKey": "LOCAL-080000",
+    "territoryKeyOld": "80000"
+  },
+  {
+    "name": "Guarda",
+    "territoryKey": "LOCAL-090000",
+    "territoryKeyOld": "90000"
+  },
+  {
+    "name": "Leiria",
+    "territoryKey": "LOCAL-100000",
+    "territoryKeyOld": "100000"
+  },
+  {
+    "name": "Lisboa",
+    "territoryKey": "LOCAL-110000",
+    "territoryKeyOld": "110000"
+  },
+  {
+    "name": "Madeira",
+    "territoryKey": "LOCAL-300000",
+    "territoryKeyOld": "220000"
+  },
+  {
+    "name": "Portalegre",
+    "territoryKey": "LOCAL-120000",
+    "territoryKeyOld": "120000"
+  },
+  {
+    "name": "Porto",
+    "territoryKey": "LOCAL-130000",
+    "territoryKeyOld": "130000"
+  },
+  {
+    "name": "Santarém",
+    "territoryKey": "LOCAL-140000",
+    "territoryKeyOld": "140000"
+  },
+  {
+    "name": "Setúbal",
+    "territoryKey": "LOCAL-150000",
+    "territoryKeyOld": "150000"
+  },
+  {
+    "name": "Viana do Castelo",
+    "territoryKey": "LOCAL-160000",
+    "territoryKeyOld": "160000"
+  },
+  {
+    "name": "Vila Real",
+    "territoryKey": "LOCAL-170000",
+    "territoryKeyOld": "170000"
+  },
+  {
+    "name": "Viseu",
+    "territoryKey": "LOCAL-180000",
+    "territoryKeyOld": "180000"
+  }
+]

@@ -2,23 +2,32 @@ import styled from "styled-components"
 import { applyStyleModifiers } from 'styled-components-modifiers'
 
 const TITLE_MODIFIER = {
-  big: () => `
-    font-size: ${props => props.theme.size.l};
+  big: ({ theme }) => `
+    font-size: ${theme.size.l};
   `,
-  small: () => `
-    font-size: ${props => props.theme.size.xs};
+  small: ({ theme }) => `
+    font-size: ${theme.size.s};
   `,
-  medium: () => `
-    font-size: ${props => props.theme.size.base};
+  medium: ({ theme }) => `
+    font-size: ${theme.size.ml};
   `,
-  bold: () => `
-    font-weight: ${props => props.theme.weight.bold};
+  bold: ({ theme }) => `
+    font-weight: ${theme.weight.bold};
+  `,
+  light: ({ theme }) => `
+    font-weight: ${theme.weight.light};
+  `,
+  normal: ({ theme }) => `
+    font-weight: ${theme.weight.normal};
   `
 }
 
-export default styled.h1`
-    font-size: ${props => props.theme.size.base};
-    margin: 0;
-    padding: 0;
-    ${applyStyleModifiers(TITLE_MODIFIER)};
+const Title = styled.span`
+  margin: 0;
+  padding: 0;
+  color: ${props => props.theme.color.base};
+  ${applyStyleModifiers(TITLE_MODIFIER)};
 `
+
+export default Title
+

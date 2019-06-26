@@ -33,5 +33,12 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-resolve-src`,
     `gatsby-plugin-polished`,
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/data/`,
+      },
+    },
   ],
-}
+};

@@ -66,6 +66,10 @@ function SEO({ description, lang, meta, title, hasTitleFormat }) {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          rel: `canonical`,
+          content: `https://votos.pt`,
+        },
       ].concat(meta)}
     />
   );

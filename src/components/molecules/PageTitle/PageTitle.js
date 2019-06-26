@@ -3,19 +3,28 @@
  */
 
 import React from "react"
-// import PropTypes from "prop-types"
-// import styled, { ThemeProvider } from "styled-components"
-// import { theme } from "styles/theme"
+import PropTypes from "prop-types"
 import { Subtitle, Title } from "components/atoms";
-import { theme } from "styles/theme"
+import styled from 'styled-components';
 
 const PageTitle = ({ subtitle, title }) => (
-    <>
-        {subtitle && <Subtitle size={theme.size.s}>{subtitle}</Subtitle>}
-        <Title size={theme.size.m} margin={`${theme.spacing.xxxs} 0`}>{title}</Title>
-    </>
+    <Wrapper>
+        {subtitle && <Subtitle modifiers={['small', 'light']} >{subtitle}</Subtitle>}
+        <Title modifiers={['medium', 'bold']}>{title}</Title>
+    </Wrapper>
 )
 
-PageTitle.propTypes = {}
+const Wrapper = styled.div`
+    margin: ${props => props.theme.spacing.m} 0;
+`;
+
+PageTitle.propTypes = {
+    subtitle: PropTypes.string,
+    title: PropTypes.string.isRequired
+}
+
+PageTitle.defaultProps = {
+    title: ''
+}
 
 export default PageTitle
