@@ -1,10 +1,9 @@
 import React from 'react';
 
-import { Layout } from "components/organisms"
-import { Logo, Container, Title, Text } from "components/atoms"
-import { SocialItem } from "components/molecules"
-import SEO from "utils/Seo"
-import { theme } from "styles/theme"
+import { Layout } from 'components/organisms';
+import { Logo, Container, Title, Text } from 'components/atoms';
+import { SocialItem } from 'components/molecules';
+import SEO from 'utils/Seo';
 
 const IndexPage = () => (
   <Layout>
@@ -14,7 +13,7 @@ const IndexPage = () => (
     />
     <Container center>
       <Logo />
-      <Title modifiers={['big', 'bold']} >votos.pt</Title>
+      <Title modifiers={['big', 'bold']}>votos.pt</Title>
       <Text big>Plataforma Online da Democracia Portuguesa</Text>
       <SocialItem />
     </Container>

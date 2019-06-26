@@ -1,5 +1,5 @@
-import styled from "styled-components"
-import { applyStyleModifiers } from 'styled-components-modifiers'
+import styled from 'styled-components';
+import { applyStyleModifiers } from 'styled-components-modifiers';
 
 const TITLE_MODIFIER = {
   big: ({ theme }) => `
@@ -9,7 +9,7 @@ const TITLE_MODIFIER = {
     font-size: ${theme.size.s};
   `,
   medium: ({ theme }) => `
-    font-size: ${theme.size.ml};
+    font-size: ${theme.size.m};
   `,
   bold: ({ theme }) => `
     font-weight: ${theme.weight.bold};
@@ -17,17 +17,14 @@ const TITLE_MODIFIER = {
   light: ({ theme }) => `
     font-weight: ${theme.weight.light};
   `,
-  normal: ({ theme }) => `
-    font-weight: ${theme.weight.normal};
-  `
-}
+};
 
 const Title = styled.span`
   margin: 0;
   padding: 0;
   color: ${props => props.theme.color.base};
+  font-weight: ${props => props.theme.weight.base};
   ${applyStyleModifiers(TITLE_MODIFIER)};
-`
+`;
 
-export default Title
-
+export default Title;
