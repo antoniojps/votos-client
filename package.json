@@ -24,9 +24,10 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
+    "react-select": "^3.0.4",
+    "react-simple-maps": "^0.12.1",
     "styled-components": "^4.2.1",
-    "styled-components-modifiers": "^1.2.1",
-    "react-simple-maps": "^0.12.1"
+    "styled-components-modifiers": "^1.2.1"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",

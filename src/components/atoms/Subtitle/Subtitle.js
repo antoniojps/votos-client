@@ -5,6 +5,9 @@ const SUBTITLE_MODIFIER = {
   big: ({ theme }) => `
     font-size: ${theme.size.l};
   `,
+  xsmall: ({ theme }) => `
+    font-size: ${theme.size.xxxs};
+  `,
   small: ({ theme }) => `
     font-size: ${theme.size.s};
   `,
@@ -17,6 +20,9 @@ const SUBTITLE_MODIFIER = {
   light: ({ theme }) => `
     font-weight: ${theme.weight.light};
   `,
+  colorInverse: ({ theme }) => `
+    color: ${theme.color.baseInverse};
+`
 };
 
 export default styled.h2`

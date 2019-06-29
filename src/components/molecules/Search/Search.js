@@ -1,28 +1,34 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Icon } from 'components/atoms'
 
 const Search = props => (
   <Wrapper>
+    <Icon icon='search' height={20} />
     <SearchInput {...props} />
   </Wrapper>
 )
 
 const Wrapper = styled.div`
   display: inline-flex;
-  border-radius: 20px;
-  padding: ${props => props.theme.spacing.xs} ${props => props.theme.spacing.s} ;
-  width: 100%;
-  border: 0;
+  border-radius: 8px;
   outline: none;
-  background: ${props => props.theme.color.grey};
+  border: 1px solid ${props => props.theme.color.border};
+  overflow: hidden;
+  align-items: center;
+  padding: 0 .5rem;
+  &:hover {
+    border-color: ${props => props.theme.color.baseLighter};
+  }
 `;
 
 const SearchInput = styled.input`
   width: 100%;
-  color: ${props => props.theme.color.baseLighter};
+  padding: ${props => props.theme.spacing.xs} ;
+  color: ${props => props.theme.color.base};
+  font-size: ${props => props.theme.size.xxs};
   border: 0;
   outline: none;
-  background: ${props => props.theme.color.grey};
   ::placeholder,
   ::-webkit-input-placeholder {
     color: ${props => props.theme.color.baseLighter};

@@ -5,6 +5,9 @@ const TITLE_MODIFIER = {
   big: ({ theme }) => `
     font-size: ${theme.size.l};
   `,
+  xsmal: ({ theme }) => `
+  font-size: ${theme.size.xs};
+  `,
   small: ({ theme }) => `
     font-size: ${theme.size.s};
   `,
@@ -17,6 +20,9 @@ const TITLE_MODIFIER = {
   light: ({ theme }) => `
     font-weight: ${theme.weight.light};
   `,
+  colorInverse: ({ theme }) => `
+    color: ${theme.color.baseInverse};
+  `
 };
 
 const Title = styled.span`
