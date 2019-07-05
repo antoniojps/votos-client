@@ -66,7 +66,9 @@ const spacing = {
 };
 
 const grid = {
-  width: '1040px',
+  sm: 400,
+  md: 750,
+  lg: 1040,
 };
 
 export const theme = {
