@@ -55,7 +55,7 @@ const spacing = {
   xxs: rem('8px'),
   xxms: rem('10px'),
   xs: rem('12px'),
-  xms: rem('14px'),
+  xms: rem('15px'),
   s: rem('20px'),
   sm: rem('22px'),
   ms: rem('24px'),

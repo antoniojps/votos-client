@@ -18,7 +18,7 @@ const Parties = () => {
   return (
     <Layout>
       <SEO
-        title='Votos - Partidos políticos'
+        title='Lista de partidos políticos'
         hasTitleFormat={false}
       />
       <PageTitle title='Partidos políticos' subtitle='2019' />
@@ -27,6 +27,13 @@ const Parties = () => {
         <Search placeholder='Pesquisar partidos' value={searchValue} onChange={e => setSearchValue(e.target.value)} />
       </FilterActionsWrapper>
       <ListWrapper>
+        {parties.map(party => <Card key={party.id} {...party} />)}
+        {parties.map(party => <Card key={party.id} {...party} />)}
+        {parties.map(party => <Card key={party.id} {...party} />)}
+        {parties.map(party => <Card key={party.id} {...party} />)}
+        {parties.map(party => <Card key={party.id} {...party} />)}
+        {parties.map(party => <Card key={party.id} {...party} />)}
+        {parties.map(party => <Card key={party.id} {...party} />)}
         {parties.map(party => <Card key={party.id} {...party} />)}
       </ListWrapper>
     </Layout>
@@ -45,10 +52,13 @@ const FilterActionsWrapper = styled.div`
 
 const ListWrapper = styled.section`
   width: 100%;
-  display: inline-flex;
   flex-wrap: wrap;
   margin: ${props => props.theme.spacing.m} 0;
-  justify-content: center;
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+  grid-column-gap: 15px;
+  grid-row-gap: 0px; 
 `;
 
 

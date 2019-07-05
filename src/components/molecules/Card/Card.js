@@ -26,18 +26,19 @@ const CardWrapper = styled.article`
   cursor: pointer;
   background: ${props => props.color || props.theme.color.baseLighter};
   border-radius: 20px;
-  width: 20%;
+  width: 100%;
   color: ${props => props.theme.color.baseInverse};
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: .5rem;
-  -webkit-box-shadow: 0 4px 4px 0 rgba(0,0,0,0.12);
-  -moz-box-shadow: 0 4px 4px 0 rgba(0,0,0,0.12);
-  /* box-shadow: 0 4px 4px 0 rgba(0,0,0,0.12); */
+  /* -webkit-box-shadow: 0 4px 4px 0 rgba(0,0,0,0.12);
+  -moz-box-shadow: 0 4px 4px 0 rgba(0,0,0,0.12); */
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.12);
   box-shadow: 0px 11px 18px -6px rgba(153,153,153,1);
   padding: ${props => props.theme.spacing.s};
+  transition: all 0.2s ease;
 
   &:hover {
    transform: translate3d(0px, -1px, 0px);
